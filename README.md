@@ -10,8 +10,10 @@ sudo pip install youtube-python
 ```
 
 ## Using
+
 ```python
-from youtube import API
+from asyoutube import API
+
 api = API(client_id='', client_secret='', api_key='', access_token='optional')
 ```
 

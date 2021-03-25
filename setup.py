@@ -9,7 +9,7 @@ except IOError:
     long_description = ""
 
 setup(
-    name='youtube-python',
+    name='youtube-python-async',
     version='1.0.13',
     description='Python Youtube Data API v3',
     long_description=long_description,
@@ -25,7 +25,6 @@ setup(
         "Operating System :: OS Independent",
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
-    keywords="youtube data api python v3",
-    packages=['youtube'],
-    install_requires=['requests']
+    keywords="asyoutube data api python v3",
+    packages=['asyoutube']
 )

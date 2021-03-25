@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+asyoutube/__init__.py
+asyoutube/api.py
+asyoutube/exceptions.py
+youtube_python_async.egg-info/PKG-INFO
+youtube_python_async.egg-info/SOURCES.txt
+youtube_python_async.egg-info/dependency_links.txt
+youtube_python_async.egg-info/top_level.txt

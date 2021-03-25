@@ -3,5 +3,5 @@ __author__ = 'Rohit Khatri'
 __license__ = 'MIT'
 
 
-from youtube.exceptions import *
-from youtube.api import API
+from asyoutube.exceptions import *
+from asyoutube.api import API
