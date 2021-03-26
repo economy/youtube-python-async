@@ -1,4 +1,4 @@
-# youtube-python
+# youtube-python-async
 ===================
 #### Python - Youtube Data API v3
 
