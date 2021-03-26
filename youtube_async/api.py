@@ -7,12 +7,6 @@ class API:
     _api_key = None
     _access_token = None
     _api_base_url = 'https://www.googleapis.com/youtube/v3/'
-    _auth_url = 'https://accounts.google.com/o/oauth2/auth'
-    _exchange_code_url = 'https://accounts.google.com/o/oauth2/token'
-    _scope = [
-        'https://www.googleapis.com/auth/youtube',
-        'https://www.googleapis.com/auth/userinfo.profile'
-    ]
     _part = 'id,snippet'
     _async_client = httpx.AsyncClient()
 
@@ -45,7 +39,7 @@ class API:
         return self.response(await self._post(self._api_base_url + endpoint, params=kwargs))
 
     async def get_profile(self):
-        return await self.response(await self._get(
+        return self.response(await self._get(
             'https://www.googleapis.com/oauth2/v1/userinfo',
             {'access_token': self._access_token}
         ))

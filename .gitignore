@@ -1,6 +1,5 @@
 .idea
 .DS_Store
-/youtube_python.egg-info
 /dist
 youtube_python_async.egg-info/
 build/
