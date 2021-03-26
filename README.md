@@ -24,7 +24,7 @@ video = await api.get('videos', id='B7FJV9KIn58')
 
 ## Query [channels](https://developers.google.com/youtube/v3/docs/channels/list)
 ```python
-video = await api.get('channels', id='UCLFZ5qAH-l_WiRd_EOzX2og')
+channel = await api.get('channels', id='UCLFZ5qAH-l_WiRd_EOzX2og')
 ```
 
 ## Contributing
