@@ -2,32 +2,33 @@
 ===================
 #### Python - Youtube Data API v3
 
-**youtube-python** is a simple client for youtube api. It uses [Youtube Data API v3](https://developers.google.com/youtube/v3/).
-
+**youtube-python-async** is an asynchronous client for the YouTube API, based on [youtube-python](https://github.com/rohitkhatri/youtube-python).
+        It uses the [Youtube Data API v3](https://developers.google.com/youtube/v3/).
 ## Installation
 ``` 
-sudo pip install youtube-python
+pip install git+git://github.com/economy/youtube-python-async.git
 ```
 
-## Using
+## Set up API client
+
 ```python
-from youtube import API
+from youtube_async import API
+
 api = API(client_id='', client_secret='', api_key='', access_token='optional')
 ```
 
-## References https://developers.google.com/youtube/v3/docs/videos
+## Query [videos](https://developers.google.com/youtube/v3/docs/videos)
 ```python
-video = api.get('videos', id='B7FJV9KIn58')
+video = await api.get('videos', id='B7FJV9KIn58')
 ```
 
-## References https://developers.google.com/youtube/v3/docs/channels/list
+## Query [channels](https://developers.google.com/youtube/v3/docs/channels/list)
 ```python
-video = api.get('channels', id='UCLFZ5qAH-l_WiRd_EOzX2og')
+video = await api.get('channels', id='UCLFZ5qAH-l_WiRd_EOzX2og')
 ```
-
 
 ## Contributing
-[https://github.com/rohitkhatri/youtube-python](https://github.com/rohitkhatri/youtube-python)
+[https://github.com/economy/youtube-python-async](https://github.com/rohitkhatri/youtube-python)
 
 ## Youtube Data API v3
 [Youtube Data API v3 Doc](https://developers.google.com/youtube/v3/)

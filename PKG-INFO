@@ -1,50 +1,47 @@
-Metadata-Version: 1.1
-Name: youtube-python
-Version: 1.0.13
-Summary: Python Youtube Data API v3
-Home-page: https://github.com/rohitkhatri/youtube-python
-Author: Rohit Khatri
-Author-email: developer.rohitkhatri@gmail.com
+Metadata-Version: 1.0
+Name: youtube-python-async
+Version: 1.0.1
+Summary: Python Youtube Data API v3 - Asynchronous
+Home-page: https://github.com/economy/youtube-python
+Author: economy
+Author-email: the.economy@gmail.com
 License: GPL
-Description: # youtube-python
+Description: # youtube-python-async
         ===================
-        #### Python - Youtube Data API v3
+        #### Python - Youtube Data API v3 - Asynchronous
         
-        **youtube-python** is a simple client for youtube api. It uses [Youtube Data API v3](https://developers.google.com/youtube/v3/).
+        **youtube-python-async** is an asynchronous client for the YouTube API, based on [youtube-python](https://github.com/rohitkhatri/youtube-python).
+        It uses the [Youtube Data API v3](https://developers.google.com/youtube/v3/).
         
         ## Installation
         ``` 
-        sudo pip install youtube-python
+        pip install git+git://github.com/economy/youtube-python-async.git
         ```
         
-        ## Using
+        ## Usage
         ```python
-        from youtube import YouTube
-        api = youtube.YouTube(api_key='')
+        from youtube_async import API
+        api = API(api_key='')
         ```
         
-        ## References https://developers.google.com/youtube/v3/docs/videos
+        ## Query [videos](https://developers.google.com/youtube/v3/docs/videos)
         ```python
-        video = api.get('videos', id='B7FJV9KIn58')
+        video = await api.get('videos', id='B7FJV9KIn58')
         ```
         
-        ## References https://developers.google.com/youtube/v3/docs/channels/list
+        ## Query [channels](https://developers.google.com/youtube/v3/docs/channels/list)
         ```python
-        video = api.get('channels', id='UCLFZ5qAH-l_WiRd_EOzX2og')
+        video = await api.get('channels', id='UCLFZ5qAH-l_WiRd_EOzX2og')
         ```
-        
-        
-        ## Contributing
-        [https://github.com/rohitkhatri/youtube-python](https://github.com/rohitkhatri/youtube-python)
-        
+
         ## Youtube Data API v3
         [Youtube Data API v3 Doc](https://developers.google.com/youtube/v3/)
         
-Keywords: youtube data api python v3
+Keywords: youtube data api python v3 async
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: Operating System :: OS Independent
-Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.9
 Classifier: Operating System :: OS Independent
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
