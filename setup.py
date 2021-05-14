@@ -10,7 +10,7 @@ except IOError:
 
 setup(
     name='youtube-python-async',
-    version='1.0.1',
+    version='1.0.2',
     description='Python Youtube Data API v3 - Asynchronous',
     long_description=long_description,
     url='https://github.com/economy/youtube-python-async',
