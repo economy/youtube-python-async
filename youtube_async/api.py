@@ -16,7 +16,7 @@ class API:
         self._api_key = api_key
         self._access_token = access_token
         self._async_client = httpx.AsyncClient(timeout=timeout)
-
+        print(timeout)
         if api_url:
             self._api_base_url = api_url
 
