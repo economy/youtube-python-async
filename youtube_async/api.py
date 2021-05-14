@@ -10,14 +10,15 @@ class API:
     _part = 'id,snippet'
     _async_client = httpx.AsyncClient()
 
-    def __init__(self, client_id, client_secret, api_key, access_token=None, api_url=None):
+    def __init__(self, client_id, client_secret, api_key, access_token=None, api_url=None, timeout=5):
         self._client_id = client_id
         self._client_secret = client_secret
         self._api_key = api_key
         self._access_token = access_token
+        self._async_client = httpx.AsyncClient(timeout=timeout)
 
         if api_url:
-            self.api_url = api_url
+            self._api_base_url = api_url
 
     async def get(self, endpoint, **kwargs):
         if self._access_token:
