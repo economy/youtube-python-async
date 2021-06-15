@@ -14,7 +14,7 @@ pip install git+git://github.com/economy/youtube-python-async.git
 ```python
 from youtube_async import API
 
-api = API(client_id='', client_secret='', api_key='', access_token='optional')
+api = API(client_id='', client_secret='', api_key='', access_token='optional', timeout=5)
 ```
 
 ## Query [videos](https://developers.google.com/youtube/v3/docs/videos)

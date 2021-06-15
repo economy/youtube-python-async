@@ -3,3 +3,6 @@
 /dist
 youtube_python_async.egg-info/
 build/
+venv/
+*.ipynb
+__pycache__/
